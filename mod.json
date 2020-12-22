@@ -1,0 +1,13 @@
+{
+	
+	"Name": "BattleRoyale",
+	"Description": "A WIP battle Royale converstion for VU BF3",
+	"Version": "1.0.0",
+	"Authors": ["TyloRen"],
+	"HasWebUI": true,
+	"Tags": ["br","battleroyale","wip"],
+	"HasVeniceEXT": true,
+	"Dependencies": {
+		"veniceext": "^1.0.0"
+	}
+}
