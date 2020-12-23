@@ -24,4 +24,4 @@ else
 	return false
 end
 
-print(versionCheck(rquire('lobby',commonVersion))
+print(versionCheck(require('__server/lobby'),commonVersion))
