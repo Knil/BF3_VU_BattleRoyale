@@ -14,11 +14,12 @@ versionCheck(string)
 
 Require and Check for dependencies. if version is not = to current version expected, return error
  --]]
-function versionCheck(string v)
-
+function versionCheck(v)
 if v ~= nil then
+	return false
 elseif v == commonVersion then
 	return true
 else
 	return false
+end
 end
