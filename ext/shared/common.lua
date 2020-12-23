@@ -8,20 +8,17 @@ common server events. created so the server only has to load one external lua fi
 
 
 ]]--
-commonVersion = '1.0.1'
+local commonVersion = '1.0.1'
+--[[
+versionCheck(string)
 
+Require and Check for dependencies. if version is not = to current version expected, return error
+ --]]
+function versionCheck(string v)
 
---Version check 
---Require and Check for dependencies. if version is not = to current version expected, return error
-
--- 
-function versionCheck (v,c)
-local v = require()
 if v ~= nil then
-elseif v == c then
+elseif v == commonVersion then
 	return true
 else
 	return false
 end
-
-print(versionCheck(require('__server/lobby'),commonVersion))
