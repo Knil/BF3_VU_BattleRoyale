@@ -1,7 +1,9 @@
 require('__shared/common')
-local t = require('data/settings/lobby')
-Events:Subscribe('Extension:Loaded', function()
-    WebUI:Init()
-end)
-
-print("Version Checking : Test = " + versionCheck(t,commonVersion))
+print (require('data/settings/lobby'))
+require('data/items/items')
+local t = LobbyVersion
+if versionCheck(t) then
+	print('Version Check passed...')
+else
+	print('Version Check failed...')
+end

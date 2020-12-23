@@ -16,5 +16,6 @@ lobbyVersion
 
 
 ]]--
-lobbyVersion = '1.0.0'
-return lobbyVersion
+
+
+lobbyVersion = 1
